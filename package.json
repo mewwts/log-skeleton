@@ -11,5 +11,8 @@
     "url": "https://github.com/mewwts/bunyan-shadower"
   },
   "author": "Mats Julian Olsen",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "should": "^7.0.1"
+  }
 }
