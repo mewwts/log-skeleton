@@ -1,0 +1,15 @@
+{
+  "name": "bunyan-shadower",
+  "version": "1.0.0",
+  "description": "Object that allows you to call the buyan log API even if the logger was never initialized.",
+  "main": "lib/bunyan-shadower.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mewwts/bunyan-shadower"
+  },
+  "author": "Mats Julian Olsen",
+  "license": "MIT"
+}
