@@ -13,7 +13,7 @@ var shadower = require('bunyan-shadower');
 module.exports = function (options) {
   var log = shadower((options) ? options.log : undefined);
   ...
-  log.info('Doesn't matter if options.log is undefined');
+  log.info("Doesn't matter if options.log is undefined");
 };
 ```
 
