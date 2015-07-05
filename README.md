@@ -17,6 +17,9 @@ module.exports = function (options) {
 };
 ```
 
+If `options.log` is undefined, the call to `log.info` does nothing. If it's a valid (perhaps bunyan) logger, the logger will log at the appropriate level.
+
+
 ## License
 
 MIT
