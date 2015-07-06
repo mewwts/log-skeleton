@@ -13,9 +13,12 @@ var shadower = require('bunyan-shadower');
 module.exports = function (options) {
   var log = shadower((options) ? options.log : undefined);
   ...
-  log.info('Doesn't matter if options.log is undefined');
+  log.info("Doesn't matter if options.log is undefined");
 };
 ```
+
+If `options.log` is undefined, the call to `log.info` does nothing. If it's a valid (perhaps bunyan) logger, the logger will log at the appropriate level.
+
 
 ## License
 
