@@ -27,6 +27,7 @@ module.exports = function (options) {
 
 If `options.log` is undefined, the call to `log.info` does nothing. If it's a log object, the logger will log at the appropriate level.
 
+The original log object is exposed at `log.log` in the above example, as to give you an access point to the real log object.
 
 ## License
 
