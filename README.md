@@ -1,4 +1,5 @@
 # log-skeleton
+[![build Status](https://travis-ci.org/mewwts/log-skeleton.svg?branch=master)](https://travis-ci.org/mewwts/log-skeleton)
 
 log-skeleton is a simple object with methods `.fatal`, `.error`, `.warn`, `.info`, `.debug` and `.trace`. It is initalized with you favorite log instance, or nothing at all.
 
