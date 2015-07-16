@@ -1,7 +1,7 @@
 {
   "name": "log-skeleton",
   "version": "1.0.0",
-  "description": "Object that allows you to call the buyan log API even if the logger was never initialized.",
+  "description": "Object that allows you to use the log API even if the logger was never initialized.",
   "main": "lib/log-skeleton.js",
   "scripts": {
     "test": "mocha"
