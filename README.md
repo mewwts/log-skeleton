@@ -1,7 +1,8 @@
 # log-skeleton
 
-log-skeleton is a simple object with methods `.fatal`, `.error`, `.warn`, `.info`, `.debug` and `.trace`. It is initalized with you favorite log instance, or nothing at all. I.e.
-Either
+log-skeleton is a simple object with methods `.fatal`, `.error`, `.warn`, `.info`, `.debug` and `.trace`. It is initalized with you favorite log instance, or nothing at all.
+
+I.e. you can do either
 ```Javascript
 var real_log = require('bunyan').createLogger({name: 'example'});
 var log = require('log-skeleton')(real_log);
