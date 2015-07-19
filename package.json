@@ -4,7 +4,7 @@
   "description": "Object that allows you to use the log API even if the logger was never initialized.",
   "main": "lib/log-skeleton.js",
   "scripts": {
-    "test": "mocha"
+    "test": "node test/test-log-skeleton.js"
   },
   "repository": {
     "type": "git",
@@ -13,7 +13,6 @@
   "author": "Mats Julian Olsen",
   "license": "MIT",
   "devDependencies": {
-    "mocha": "^2.2.5",
-    "should": "^7.0.1"
+    "tape": "^4.0.1"
   }
 }

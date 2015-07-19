@@ -1,28 +1,26 @@
 var skeleton = require('../lib/log-skeleton');
-var assert = require('assert');
-var should = require('should');
+var test = require('tape');
 
 var obj = {
   info: function () {return 1;}
 }
-var log = skeleton(obj);
-describe('log-skeleton', function () {
-  describe('working on a mock object', function () {
-    it('should return 1 when called on obj', function () {
-      var val = log.info('help');
-      assert.equal(val, 1);
-    });
-  });
-  describe('working on a undefined property', function () {
-    it('should not throw when called', function () {
-      var mock = skeleton(undefined);
-      (function () {mock.info('help')}).should.not.throw();
-    });
-  });
-  describe('should set the log property', function () {
-    it('log property should be the same object', function () {
-      var log = skeleton(obj);
-      assert.equal(log.log, obj);
-    });
-  });
+
+test('log-skeleton should call the underlying object', function (t) {
+  var expected = obj.info();
+  var log = skeleton(obj); 
+  var actual = log.info();
+  t.equal(actual, expected);
+  t.end();
+});
+
+test('log-skeleton should not throw when called without underlying obj', function (t) {
+  var log = skeleton();
+  t.doesNotThrow(log.info);
+  t.end()
+});
+
+test('log-skeleton should expose the underlying object', function (t) {
+  var log = skeleton(obj);
+  t.deepEqual(log.log, obj);
+  t.end();
 });
