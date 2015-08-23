@@ -1,6 +1,6 @@
 {
   "name": "log-skeleton",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Object that allows you to use the log API even if the logger was never initialized.",
   "main": "lib/log-skeleton.js",
   "scripts": {
